@@ -39,13 +39,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sign up – GROUP1</title>
+<title>Sign up</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="card">
   <h1>Create an account</h1>
-  <p class="sub">GROUP1 · Server Administration</p>
+  <p class="sub">Server Administration</p>
 
   <?php foreach ($errors as $err): ?><div class="msg err"><?= e($err) ?></div><?php endforeach; ?>
   <?php if ($success): ?><div class="msg ok"><?= e($success) ?></div><?php endif; ?>
