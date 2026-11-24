@@ -41,13 +41,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Log in – GROUP1</title>
+<title>Log in</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="card">
   <h1>Log in</h1>
-  <p class="sub">GROUP1 · Server Administration</p>
+  <p class="sub">Server Administration</p>
   <?php if ($error): ?><div class="msg err"><?= e($error) ?></div><?php endif; ?>
   <form method="post">
     <input type="hidden" name="csrf" value="<?= e(csrf_token()) ?>">
